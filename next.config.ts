@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
   },
   cacheComponents: true,
   partialPrefetching: true,
+  images: {
+    remotePatterns: [new URL('https://images.unsplash.com/**')],
+  },
   turbopack: {
     rules: {
       "*.css": {
